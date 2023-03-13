@@ -6,7 +6,7 @@ import pandas as pd
 import dash_bootstrap_components as dbc
 import time
 
-dash.register_page(__name__, path='/', external_stylesheets=[dbc.themes.MATERIA])
+dash.register_page(__name__, path='/', external_stylesheets=[dbc.themes.MATERIA],  meta_tags=[{'name': 'viewport', 'content': 'width-device-width, initial-scale=1.0, maximum-scale=1.2, minimum-scale=0.5,'}])
 
 df = pd.read_excel("Vendas.xlsx")
 df2 = pd.read_excel("Falhas.xlsx") #parse_dates=['Falhas'])
