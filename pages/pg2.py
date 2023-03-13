@@ -9,7 +9,7 @@ import pandas as pd
 import plotly.graph_objects as go
 #import plotly.offline as pyo
 
-dash.register_page(__name__)
+dash.register_page(__name__,  meta_tags=[{'name': 'viewport', 'content': 'width-device-width, initial-scale=1.0, maximum-scale=1.2, minimum-scale=0.5,'}])
 
 df = px.data.tips()
 df2 = pd.read_excel("Vendas.xlsx")
